@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+html {
+    background-color: #DDDDFF;
+}
+
+
+body {
+    margin: 1em 10%;
+    padding: 0 1em 0.5em 1em;
+    background-color: #FFFFFF;
+}
+
+
+h1 {
+    font-family: "Eagle Lake", "MigMix 2P", Serif;
+    font-size: 3em;
+    text-align: center;
+}
