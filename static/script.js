@@ -1,11 +1,11 @@
 var httpobj;
-function get_question(number){
+function get_problem(number){
   httpobj = createHttpRequest();
   httpobj.onreadystatechange = onReadyStateChanged;
-  httpobj.open("GET", "questions/" + number + ".txt", true);
+  httpobj.open("GET", "problems/" + number + ".txt", true);
   httpobj.send(null);
-  pos = document.getElementById("question");
-  pos.parentNode.className = "question" + number;
+  pos = document.getElementById("problem");
+  pos.parentNode.className = "problem" + number;
 }
 
 function onReadyStateChanged(){
