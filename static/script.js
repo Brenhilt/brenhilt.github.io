@@ -31,3 +31,21 @@ function createHttpRequest(){
     return null
   }
 }
+
+
+function init(){
+    tds = document.getElementsByTagName("td");
+    for (var i = 0; i < tds.length; i++){
+        textdata = tds[i].childNodes[0].text;
+        tds[i].innerText = textdata;
+        tdid = tds[i].id.replace("problem", "");
+        tds[i].onclick = function() {
+            get_problem(tdid);
+        }
+    }
+}
+
+
+if(window.addEventListener) window.addEventListener("load", init, false);
+else if(window.attachEvent) window.attachEvent("onload", init);
+else window.onload = init;
