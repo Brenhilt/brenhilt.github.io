@@ -38,9 +38,8 @@ function init(){
     for (var i = 0; i < tds.length; i++){
         textdata = tds[i].childNodes[0].text;
         tds[i].innerText = textdata;
-        tdid = tds[i].id.replace("problem", "");
         tds[i].onclick = function() {
-            get_problem(tdid);
+            get_problem(this.id.replace("problem", ""));
         }
     }
 }
