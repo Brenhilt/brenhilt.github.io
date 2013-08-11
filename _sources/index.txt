@@ -1,0 +1,18 @@
+.. Project Euler 日本語訳 documentation master file, created by
+   sphinx-quickstart on Tue Aug  6 21:03:38 2013.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+======================
+Project Euler 日本語訳
+======================
+
+`Project Euler <http://projecteuler.net>`_ の日本語訳です．
+
+Contents:
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    problems/*
