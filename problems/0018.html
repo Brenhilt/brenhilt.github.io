@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Problem 18 &mdash; Project Euler 日本語訳</title>
+    
+    <link rel="stylesheet" href="../_static/agogo.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Project Euler 日本語訳" href="../index.html" />
+    <link rel="next" title="Problem 67" href="0067.html" />
+    <link rel="prev" title="Problem 15" href="0015.html" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="headertitle"><a
+          href="../index.html">Project Euler 日本語訳</a></div>
+        <div class="rel">
+          <a href="../index.html">HOME</a> |
+          <a href="0015.html" title="Problem 15"
+             accesskey="P">previous</a> |
+          <a href="0067.html" title="Problem 67"
+             accesskey="N">next</a>
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="problem-18">
+<h1>Problem 18<a class="headerlink" href="#problem-18" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>最大経路和 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>以下の三角形の頂点から下まで移動するとき、その数値の合計の最大値は23になる。</p>
+<div class="line-block">
+<div class="line"><strong>3</strong></div>
+<div class="line"><strong>7</strong> 5</div>
+<div class="line">2 <strong>4</strong> 6</div>
+<div class="line">8 5 <strong>9</strong> 3</div>
+</div>
+<p>この例では 3 + 7 + 4 + 9 = 23</p>
+<p>以下の三角形を頂点から下まで移動するとき、その最大の合計値を求めよ。</p>
+<div class="line-block">
+<div class="line">75</div>
+<div class="line">95 64</div>
+<div class="line">17 47 82</div>
+<div class="line">18 35 87 10</div>
+<div class="line">20 04 82 47 65</div>
+<div class="line">19 01 23 75 03 34</div>
+<div class="line">88 02 77 73 07 63 67</div>
+<div class="line">99 65 04 28 06 16 70 92</div>
+<div class="line">41 41 26 56 83 40 80 70 33</div>
+<div class="line">41 48 72 33 47 32 37 16 94 29</div>
+<div class="line">53 71 44 65 25 43 91 52 97 51 14</div>
+<div class="line">70 11 33 28 77 73 17 78 39 68 17 57</div>
+<div class="line">91 71 52 38 17 14 91 43 58 50 27 29 48</div>
+<div class="line">63 66 04 68 89 53 67 30 73 16 69 87 40 31</div>
+<div class="line">04 62 98 27 23 09 70 98 73 93 38 53 60 04 23</div>
+</div>
+<p>注: ここではたかだか 16384 通りのルートしかないので、すべてのパターンを試すこともできる。Problem 67 は同じ問題だが100行あるので、総当りでは解けない。もっと賢い方法が必要である。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="0015.html"
+                        title="previous chapter">Problem 15</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="0067.html"
+                        title="next chapter">Problem 67</a></p>
+          <h3>Table Of Contents</h3>
+          <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="0001.html">Problem 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0002.html">Problem 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0003.html">Problem 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0015.html">Problem 15</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Problem 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0067.html">Problem 67</a></li>
+</ul>
+
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="left">
+          <a href="0015.html" title="Problem 15"
+             >previous</a> |
+          <a href="0067.html" title="Problem 67"
+             >next</a>
+        </div>
+
+        <div class="right">
+          
+    <div class="footer">
+        &copy; Copyright 2013, Brenhilt Schildt &lt;brenhilt@gmail.com&gt;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
